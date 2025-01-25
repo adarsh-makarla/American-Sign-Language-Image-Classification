@@ -48,6 +48,19 @@ We used many layers including:
 
 The dataset was split using a 70-15-15 (70% for training, 15% for validation, 15% for testing). The images were resized to 200x200 pixels to ensure suitability for the model. We incorporated multiple metrics from sklearn including Recall, Precision, and F1 Scores to statistically analyze the performance of the model. 
 
+For context on the evaluation methods:
+- **Precision**: Measures the percentage of all the predictions the model said was true, how many are actually true 
+
+  $True Positives / (True Positives + False Positives)$
+  
+- **Recall**: Measures the percentage of all the actual true predictions, how many were actually true 
+
+  $True Positives / (True Positives + False Negatives)$
+
+- **F1-Score**: A harmonic mean of precision and recall 
+
+  $2 * (Precision * Recall) / (Precision + Recall)$
+
 **4. Results**
 
 ![image](https://github.com/user-attachments/assets/1b71a472-0db2-4312-b6db-6d900f965a02)
