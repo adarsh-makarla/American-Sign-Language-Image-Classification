@@ -1,1 +1,1 @@
-# -American-Sign-Language-Image-Classification
+# American-Sign-Language-Image-Classification
