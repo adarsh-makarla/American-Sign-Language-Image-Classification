@@ -26,11 +26,12 @@ With such a significant fraction of the population relying on ASL and other sign
 
 As the dataset came packaged in separate folders and that Google Colab was the development environment, all of the folders were uploaded to Google Drive. We used 
 the Drive Mount feature to connect the Colab Notebook to Google drive and access the folders through there. Interestingly, the miscellaneous classes—"SPACE", "DELETE", and "NOTHING"—
-included naturally occurring variability and imperfections. These classes provided a valuable opportunity for the model to learn to distinguish between relevant hand gestures and irrelevant or non-gesture signals, helping to prevent overfitting to perfect examples and promoting robustness.
+included naturally occurring variability and imperfections. These classes provided a valuable opportunity for the model to learn to distinguish between relevant hand gestures and irrelevant or non-gesture signals, helping to prevent overfitting to perfect examples and promoting robustness. 
 
 **2. Model Selection:**
 
 Prior to learning about the VGG-16 model, the Sequential Model was most familiar at the time for image classification use cases like this.
+
 We used many layers including:
 
 **Conv2D**: For extracting features
@@ -45,19 +46,24 @@ We used many layers including:
 
 **3. Training and Evaluation**
 
-The dataset was split using a 70-15-15 (70% for training, 15% for validation, 15% for testing). We incorporated multiple metrics from sklearn including Recall, Precision, and F1 Scores.
+The dataset was split using a 70-15-15 (70% for training, 15% for validation, 15% for testing). The images were resized to 200x200 pixels to ensure suitability for the model. We incorporated multiple metrics from sklearn including Recall, Precision, and F1 Scores to statistically analyze the performance of the model. 
 
 **4. Results**
 
 ![image](https://github.com/user-attachments/assets/4ef4fbec-577b-4515-986b-2b09fcff78c7)
 
 
+### VGG-16 Model
+**1. Data Preprocessing**
 
 
+**2. Model Selection:**
 
 
+**3. Training and Evaluation**
 
 
+**4. Results**
 
 
 
