@@ -112,8 +112,11 @@ Considering the very recent transition to online meeting tools like Zoom and Mic
 
 
 
-## Dataset Citation
+## Dataset Citation and Acknowledgments 
 @misc{https://www.kaggle.com/grassknoted/aslalphabet_akash nagaraj_2018,
 title={ASL Alphabet},
 url={https://www.kaggle.com/dsv/29550},
 DOI={10.34740/KAGGLE/DSV/29550},
+
+
+This project was completed as part of a group effort. Team members contributed to different aspects, such as model design, data preprocessing, and evaluation. The repository reflects my individual contributions and summarizes our collective work.
