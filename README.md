@@ -46,7 +46,9 @@ We used many layers including:
 
 **3. Training and Evaluation**
 
-The dataset was split using a 70-15-15 (70% for training, 15% for validation, 15% for testing). The images were resized to 200x200 pixels to ensure suitability for the model. We incorporated multiple metrics from sklearn including Recall, Precision, and F1 Scores to statistically analyze the performance of the model. 
+- The dataset was split using a 70-15-15 (70% for training, 15% for validation, 15% for testing)
+- The images were resized to 200x200 pixels to ensure suitability for the model
+- We incorporated multiple metrics from sklearn including Recall, Precision, and F1 Scores to statistically analyze the performance of the model
 
 For context on the evaluation methods:
 - **Precision**: Measures the percentage of all the predictions the model said was true, how many are actually true 
@@ -82,8 +84,10 @@ This model was selected after learning of its effectiveness for image classifica
 
 **3. Training and Evaluation**
 
-We loaded the VGG-16 model with the pretrained ImageNet weights and image size of 200x200 pixels once again. Custom layers like Dense, Flatten, and Dropout were added to fine-tune the model by allowing it to learn complex combinations of features and further prevent overfitting. 
-The same sklearn metrics were used to understand the model's performance. 
+- We loaded the VGG-16 model with the pretrained ImageNet weights
+- Image size of 200x200 pixels
+- Custom layers like Dense, Flatten, and Dropout were added to fine-tune the model by allowing it to learn complex combinations of features and further prevent overfitting
+- The same sklearn metrics were used to understand the model's performance
 
 
 **4. Results**
@@ -98,7 +102,7 @@ The VGG-16 Model ended up performing better than the Sequential Model!
 
 - As this was a collaborative effort, downloading folders containing 87,000 images locally would have been very tedious to access across multiple machines, and accessing the notebook on the same page would have been more difficult as well. Google Colab has many useful ML packages that were
   helpful for this project and holding the data in shared folders was benefical as well. 
-- Splitting the data into 2 portions like the standard 80/20 did not produce the best results, so we decided to split the data 70/15/15. We went with a 70/30 split at first, holding 30% temporarily before splitting that again to produce the validation and test sets. 
+- Splitting the data into 2 portions like the standard 80/20 did not produce the best results, so we used a 70/15/15 split. We went with a 70/30 split at first, holding 30% temporarily before splitting that again to produce the validation and test sets. 
 - Initially, we did not have the computing power to train a model on so many images, so we decided to use ~25% of all the data and split that so it would finish the training process faster. Of course, more data would provide stronger results
   so while it helped to reduce the number of images we ultimately decided to take advantage of the full dataset. Luckily, Google Colab has an option to upgrade the GPU, which we took advantage of. We ended up using the T4 GPU.
 
