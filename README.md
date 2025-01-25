@@ -25,7 +25,7 @@ With such a significant fraction of the population relying on ASL and other sign
 **1. Data Preprocessing**
 
 As the dataset came packaged in separate folders and that Google Colab was the development environment, all of the folders were uploaded to Google Drive. We used 
-the Drive Mount feature to connect the Colab Notebook to Google drive and access the folders through there. Interestingly, the miscellaneous classes—"SPACE", "DELETE", and "NOTHING"—
+the Drive Mount feature to connect the Colab Notebook to Google Drive and access the folders through there. Interestingly, the miscellaneous classes—"SPACE", "DELETE", and "NOTHING"—
 included naturally occurring variability and imperfections. These classes provided a valuable opportunity for the model to learn to distinguish between relevant hand gestures and irrelevant or non-gesture signals, helping to prevent overfitting to perfect examples and promoting robustness. 
 
 **2. Model Selection**
