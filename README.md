@@ -21,6 +21,7 @@ With such a significant fraction of the population relying on ASL and other sign
 
 **Technologies/Libraries**: Python, Tensorflow, Keras, Pandas, NumPy, Matplotlib, Scikit-learn
 
+### Sequential Model
 **1. Data Preprocessing**
 
 As the dataset came packaged in separate folders and that Google Colab was the development environment, all of the folders were uploaded to Google Drive. We used 
