@@ -3,16 +3,16 @@
 This project is machine learning classification model trained to identify images containing hand gestures in American Sign Language (ASL). It leverages a VGG-16 Convolutional Neural Network, a 16-layer architecture pretained on images from the ImageNet database. The performance of the VGG-16 model was compared 
 to the Sequential Model from the Keras library, which we initially trained with the intention of exploring potential improvements as we gained insights into alternative architectures.
 The [dataset](https://www.kaggle.com/datasets/grassknoted/asl-alphabet) for this project contained 29 folders: 26 corresponding to each letter in the English alphabet and 3 miscellaneous classes labeled "SPACE", "DELETE" and "NOTHING". Since the test data only contained 29 images,
-a larger portion from the original 87,000 images got allocated for validation and testing to achieve a more robust result.
+a larger portion from the original 87,000 images got allocated for validation and testing to achieve a more robust result. In this repository, you will have access to the Python Notebook and documentation file containing results.  
 
 The motivation for this initiative stems from research indicating that:
 > "about 3.6% of the U.S. population, or about 11 million individuals, consider themselves deaf or have serious difficulty hearing"
 >
->  — *American Community Survey (ACS), 2021*
+>  — *[American Community Survey (ACS)](https://nationaldeafcenter.org/faq/how-many-deaf-people-live-in-the-united-states/), 2021*
 
 > "there are more than 300 different sign languages in the world, spoken by more than 72 million deaf or hard-of-hearing people worldwide"
 >
->  — *National Geographic, 2024*
+>  — *[National Geographic](https://education.nationalgeographic.org/resource/sign-language/), 2024*
 
 With such a significant fraction of the population relying on ASL and other sign languages as a form of communication, this project aims to bridge the gap enhancing integration and accessibility in our online world.
 
