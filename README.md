@@ -109,3 +109,11 @@ The VGG-16 Model ended up performing better than the Sequential Model!
   
 ## Future Development
 Considering the very recent transition to online meeting tools like Zoom and Microsoft Teams, we wanted to tackle a project that had real world application. There is room for development of a 3D CNN application that would take video input from sign language users and provide real-time translations.  
+
+
+
+## Dataset Citation
+@misc{https://www.kaggle.com/grassknoted/aslalphabet_akash nagaraj_2018,
+title={ASL Alphabet},
+url={https://www.kaggle.com/dsv/29550},
+DOI={10.34740/KAGGLE/DSV/29550},
