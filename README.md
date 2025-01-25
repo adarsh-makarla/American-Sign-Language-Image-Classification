@@ -28,7 +28,7 @@ As the dataset came packaged in separate folders and that Google Colab was the d
 the Drive Mount feature to connect the Colab Notebook to Google drive and access the folders through there. Interestingly, the miscellaneous classes—"SPACE", "DELETE", and "NOTHING"—
 included naturally occurring variability and imperfections. These classes provided a valuable opportunity for the model to learn to distinguish between relevant hand gestures and irrelevant or non-gesture signals, helping to prevent overfitting to perfect examples and promoting robustness. 
 
-**2. Model Selection:**
+**2. Model Selection**
 
 Prior to learning about the VGG-16 model, the Sequential Model was most familiar at the time for image classification use cases like this.
 
@@ -50,23 +50,43 @@ The dataset was split using a 70-15-15 (70% for training, 15% for validation, 15
 
 **4. Results**
 
+![image](https://github.com/user-attachments/assets/1b71a472-0db2-4312-b6db-6d900f965a02)
+
 ![image](https://github.com/user-attachments/assets/4ef4fbec-577b-4515-986b-2b09fcff78c7)
 
 
 ### VGG-16 Model
 **1. Data Preprocessing**
 
+This model went through the same process as the Sequential Model to maintain consistency. We mounted the drive again and sourced the images from each folder directory. 
+To augment the dataset, we used the ImageDataGenerator from Keras to normalize pixel values on the range of [0, 1]. We modified the one-hot encoded labels and the dataframe to include the correct labels to work with the ImageDataGenerator. 
 
-**2. Model Selection:**
+**2. Model Selection**
+
+This model was selected after learning of its effectiveness for image classification problems. It is a pre-trained VGG-16 model that had been trained on the ImageNet dataset.
 
 
 **3. Training and Evaluation**
 
+We loaded the VGG-16 model with the pretrained ImageNet weights and image size of 200x200 pixels once again. Custom layers like Dense, Flatten, and Dropout were added to fine-tune the model by allowing it to learn complex combinations of features and further prevent overfitting. 
+The same sklearn metrics were used to understand the model's performance. 
+
 
 **4. Results**
 
+![image](https://github.com/user-attachments/assets/09cfdbef-ce81-4429-a4c6-c78095f4f6f1)
+
+![image](https://github.com/user-attachments/assets/600eba2c-e1fe-40e9-a52f-0d0dadad9e87)
 
 
+## Challenges
 
+- As this was a collaborative effort, downloading folders containing 87,000 images locally would have been very tedious to access across multiple machines, and accessing the notebook on the same page would have been more difficult as well. Google Colab has many useful ML packages that were
+  helpful for this project and holding the data in shared folders was benefical as well. 
+- Splitting the data into 2 portions like the standard 80/20 did not produce the best results, so we decided to split the data 70/15/15. We went with a 70/30 split at first, holding 30% temporarily before splitting that again to produce the validation and test sets. 
+- Initially, we did not have the computing power to train a model on so many images,so we decided to use ~25% of all the data and split that so it would finish the training process faster. Of course, more data would provide stronger results
+  so while it helped to reduce the number of images we ultimately decided to take advantage of the full dataset. Luckily, Google Colab has an option to upgrade the GPU, which we took advantage of. We ended up using the T4 GPU.
+
+  
 ## Future Development
 Considering the very recent transition to online meeting tools like Zoom and Microsoft Teams, we wanted to tackle a project that had real world application. There is room for development of a 3D CNN application that would take video input from sign language users and provide real-time translations.  
