@@ -54,6 +54,7 @@ The dataset was split using a 70-15-15 (70% for training, 15% for validation, 15
 
 ![image](https://github.com/user-attachments/assets/4ef4fbec-577b-4515-986b-2b09fcff78c7)
 
+This model performed very well, but we learned it was possible to do better, which led us to explore another model.
 
 ### VGG-16 Model
 **1. Data Preprocessing**
@@ -78,6 +79,7 @@ The same sklearn metrics were used to understand the model's performance.
 
 ![image](https://github.com/user-attachments/assets/600eba2c-e1fe-40e9-a52f-0d0dadad9e87)
 
+The VGG-16 Model ended up performing better than the Sequential Model!
 
 ## Challenges
 
